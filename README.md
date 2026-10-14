@@ -2,7 +2,7 @@
 
 <img src="docs/logo.svg" width="88" alt="Club Cam logo">
 
-# Club Cam: Turn an Android Phone into a Wireless OBS Camera
+# Club Cam: Use Your Android Phone as a Wireless OBS Camera (RTSP, Free)
 
 **Free Android app that streams your phone camera over Wi-Fi to OBS as an RTSP source. Built for live pool and snooker table streams.**
 
@@ -25,7 +25,7 @@
 
 ## What it does
 
-Club Cam runs an RTSP server on your phone. Open OBS on a computer on the same Wi-Fi, add the phone's address as a Media Source, and the phone becomes a wireless camera. No cables, no capture card, no extra software.
+Club Cam is a free **phone-as-webcam app for OBS Studio**: a lightweight alternative to DroidCam, IP Webcam and Iriun for streaming a pool, snooker or billiards table. It runs an RTSP server on your phone. Open OBS on a computer on the same Wi-Fi, add the phone's address as a Media Source, and the phone becomes a wireless camera. No cables, no capture card, no extra software.
 
 ## How it works
 
@@ -75,6 +75,33 @@ To update, install the newer APK over the old one.
 | Audio | Video only |
 | Permissions | Camera, Notifications, Wi-Fi state, Internet (local network only) |
 | Distribution | Release APKs on GitHub Releases |
+
+## FAQ
+
+**How do I use my Android phone as an OBS camera over Wi-Fi?**
+Install Club Cam, open it, then add the `rtsp://<phone-ip>:8554/` address it shows as a Media Source in OBS (untick Local File).
+
+**Is it free? Does it need a cable, USB or a capture card?**
+It is free, wireless, and needs no cable or capture card. Phone and computer just share a Wi-Fi network or hotspot.
+
+**Does it work with Streamlabs, vMix or VLC?**
+Yes. Any software that can open an RTSP URL can play the stream.
+
+**How do I lower the delay (latency)?**
+Use 5 GHz Wi-Fi, pick 1080p30 or lower, and set OBS Network Buffering to 0-1 MB.
+
+**Will it keep streaming with the screen off?**
+Yes. It runs as a foreground service with a watchdog that restarts the camera if it stalls.
+
+**Does it send audio?**
+No, video only.
+
+**Which Android versions are supported?**
+Android 7.0 (API 24) and newer.
+
+## Keywords
+
+Android phone as webcam, phone as OBS camera, wireless webcam for OBS, RTSP camera app, OBS RTSP source, IP camera app, DroidCam alternative, IP Webcam alternative, pool table live stream, snooker live stream camera, billiards streaming, Android camera over Wi-Fi.
 
 ## About this repository
 
