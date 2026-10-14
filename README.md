@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/logo.svg" width="88" alt="Club Cam logo">
+
 # Club Cam: Turn an Android Phone into a Wireless OBS Camera
 
 **Free Android app that streams your phone camera over Wi-Fi to OBS as an RTSP source. Built for live pool and snooker table streams.**
@@ -7,8 +9,15 @@
 [![Latest release](https://img.shields.io/github/v/release/Hrishank21s/club-cam-releases?label=latest%20APK)](https://github.com/Hrishank21s/club-cam-releases/releases/latest)
 ![Platform: Android](https://img.shields.io/badge/platform-Android%207%2B-3DDC84?logo=android&logoColor=white)
 ![Protocol: RTSP](https://img.shields.io/badge/stream-RTSP-0f172a)
+![Made for OBS](https://img.shields.io/badge/made%20for-OBS%20Studio-302E31?logo=obsstudio&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white)
+![No cables](https://img.shields.io/badge/cables-none-brightgreen)
 
 **[⬇ Download the latest APK](https://github.com/Hrishank21s/club-cam-releases/releases/latest/download/app-release.apk)** · [All releases](https://github.com/Hrishank21s/club-cam-releases/releases)
+
+[Features](#features) · [Install](#install) · [Use with OBS](#use-with-obs) · [Specs](#specifications)
+
+<img src="docs/banner.svg" alt="Phone to OBS over Wi-Fi" width="900">
 
 </div>
 
@@ -17,6 +26,15 @@
 ## What it does
 
 Club Cam runs an RTSP server on your phone. Open OBS on a computer on the same Wi-Fi, add the phone's address as a Media Source, and the phone becomes a wireless camera. No cables, no capture card, no extra software.
+
+## How it works
+
+```mermaid
+flowchart LR
+    A["📱 Club Cam<br/>RTSP server :8554"] -->|Wi-Fi| B["🖥 OBS<br/>Media Source"]
+    B --> C["🔴 Live stream"]
+    A -.->|watchdog restarts<br/>camera / encoder| A
+```
 
 ## Features
 

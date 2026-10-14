@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+  <rect width="900" height="220" rx="20" fill="#0f172a"/>
+  <g transform="translate(70,55)"><rect width="70" height="110" rx="12" fill="#1e293b" stroke="#7CFC7C" stroke-width="4"/><circle cx="35" cy="22" r="8" fill="#7CFC7C"/><text x="35" y="75" fill="#7CFC7C" font-size="12" text-anchor="middle">Club Cam</text><circle cx="58" cy="12" r="3" fill="#ef4444"/></g>
+  <g stroke="#7CFC7C" stroke-width="3" fill="none" stroke-linecap="round"><path d="M175 110h130" stroke-dasharray="2 10"/><path d="M290 98l16 12-16 12"/></g>
+  <text x="240" y="92" fill="#94a3b8" font-size="14" text-anchor="middle">Wi-Fi · RTSP</text>
+  <g transform="translate(330,60)"><rect width="190" height="100" rx="12" fill="#1e293b" stroke="#64748b" stroke-width="3"/><circle cx="95" cy="50" r="26" fill="none" stroke="#e2e8f0" stroke-width="5"/><path d="M85 38l24 12-24 12z" fill="#e2e8f0"/><text x="95" y="90" fill="#94a3b8" font-size="12" text-anchor="middle">OBS Studio</text></g>
+  <g stroke="#7CFC7C" stroke-width="3" fill="none" stroke-linecap="round"><path d="M540 110h90"/><path d="M618 98l14 12-14 12"/></g>
+  <text x="780" y="104" fill="#f8fafc" font-size="30" font-weight="700" text-anchor="middle">LIVE</text>
+  <circle cx="722" cy="95" r="8" fill="#ef4444"/>
+  <text x="780" y="132" fill="#94a3b8" font-size="14" text-anchor="middle">your table stream</text>
+</svg>
